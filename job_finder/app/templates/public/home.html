@@ -1,0 +1,27 @@
+<!-- templates/public/home.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Job Finder</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+  <div class="container py-4">
+    <h1 class="mb-4">Latest Jobs</h1>
+    {% for job in jobs %}
+      <div class="card mb-3">
+        <div class="card-body">
+          <h5 class="card-title">{{ job.title }}</h5>
+          <h6 class="card-subtitle text-muted">{{ job.company }} - {{ job.location }}</h6>
+          <p class="card-text mt-2">{{ job.description[:150] }}...</p>
+          <a href="#" class="btn btn-primary btn-sm">View Details</a>
+        </div>
+      </div>
+    {% else %}
+      <p>No jobs posted yet.</p>
+    {% endfor %}
+  </div>
+</body>
+</html>
