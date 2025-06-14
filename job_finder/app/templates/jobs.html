@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jobs List</title>
+</head>
+<body>
+    <h1>Available Jobs</h1>
+    <ul>
+    {% for job in jobs %}
+        <li>
+            <strong>{{ job.title }}</strong> at {{ job.company }}<br>
+            Location: {{ job.location }}<br>
+            Description: {{ job.description }}<br>
+            Posted on: {{ job.posted_at.strftime('%Y-%m-%d') }}
+        </li>
+    {% else %}
+        <li>No jobs found.</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>

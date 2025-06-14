@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+    <title>Job List</title>
+</head>
+<body>
+    <h1>Available Jobs</h1>
+    {% for job in jobs %}
+        <div>
+            <h2>{{ job.title }} at {{ job.company }}</h2>
+            <p>{{ job.description }}</p>
+            <small>Location: {{ job.location }}</small>
+            <hr>
+        </div>
+    {% else %}
+        <p>No jobs found.</p>
+    {% endfor %}
+</body>
+</html>
