@@ -120,6 +120,6 @@ gunicorn wsgi:app
 👨‍💻 About the Developer
 Ahnaf Arafat
 💼 Aspiring Backend Developer | Python & Flask & Django
-🔗 LinkedIn:  | 🌐 Portfolio
+🔗 LinkedIn: https://www.linkedin.com/in/ahnaf-arafat-30189a357/  
 
 This project is a demonstration of clean backend architecture, deployment-readiness, and practical admin tools — perfect for real-world job board use cases.
