@@ -67,7 +67,7 @@ job_finder/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/jobfinder-admin.git
+git clone https://github.com/itsahnafarafat/jobfinder-admin.git
 cd jobfinder-admin
 ```
 
