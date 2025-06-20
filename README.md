@@ -7,7 +7,7 @@ A backend-focused web application built with **Flask** that powers the **Admin D
 ## 📍 Project Status
 
 🚧 **Currently in the Deployment Stage**
-✅ Core features are fully functional (admin login, job creation/deletion, job dashboard)
+✅ Core features are fully functional (admin login, job creation, job dashboard)
 🐞 Bug-fixing and server configuration are in progress for production deployment (Render)
 
 ---
@@ -16,7 +16,6 @@ A backend-focused web application built with **Flask** that powers the **Admin D
 
 * 🔐 Secure Admin Login System (with password hashing)
 * ➕ Add New Job Postings
-* 🗑️ Delete Existing Job Listings
 * 📋 Dashboard View of All Jobs
 * 🔒 Login-protected Routes
 * ⚙️ Modular Flask Application Structure using App Factory & Blueprints
