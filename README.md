@@ -67,8 +67,8 @@ job_finder/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/itsahnafarafat/jobfinder-admin.git
-cd jobfinder-admin
+git clone https://github.com/itsahnafarafat/Website.git
+cd Website
 ```
 
 ### 2. Set Up Virtual Environment
