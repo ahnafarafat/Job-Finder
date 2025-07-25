@@ -134,9 +134,7 @@ Ensure `runtime.txt`, `requirements.txt`, and `wsgi.py` are included for a succe
 * Job search, filters, and pagination
 * Admin role management and access control
 
-```
-
-```
+---
 ## About the Developer
 
 **Ahnaf Arafat**
