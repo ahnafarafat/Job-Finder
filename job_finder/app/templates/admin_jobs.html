@@ -1,70 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin - Job List</title>
     <style>
         body {
-            margin: 0;
-            font-family: 'Segoe UI', Tahoma, sans-serif;
-            background-color: #f4f6f8;
-            color: #222;
-            padding: 40px;
+            font-family: Arial, sans-serif;
+            margin: 40px;
         }
-
-        h1 {
-            font-size: 2rem;
-            color: #1e1e2f;
-            margin-bottom: 20px;
-            text-align: center;
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
         }
-
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
         a.button {
             display: inline-block;
-            background-color: #0078ff;
+            padding: 10px 15px;
+            background-color: #007BFF;
             color: white;
             text-decoration: none;
-            padding: 12px 20px;
-            border-radius: 8px;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
-            margin-bottom: 20px;
+            border-radius: 5px;
         }
-
         a.button:hover {
-            background-color: #005ec2;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            background-color: white;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        th, td {
-            text-align: left;
-            padding: 14px 16px;
-            border-bottom: 1px solid #f0f0f0;
-        }
-
-        th {
-            background-color: #0078ff;
-            color: white;
-            text-transform: uppercase;
-            font-size: 0.9rem;
-        }
-
-        tr:hover td {
-            background-color: #f9f9f9;
-        }
-
-        p {
-            text-align: center;
-            color: #555;
+            background-color: #0056b3;
         }
     </style>
 </head>
@@ -72,9 +35,7 @@
 
     <h1>All Job Listings</h1>
 
-    <div style="text-align: center;">
-        <a href="{{ url_for('admin.add_job') }}" class="button">➕ Add New Job</a>
-    </div>
+    <a href="{{ url_for('admin.add_job') }}" class="button">➕ Add New Job</a>
 
     {% if jobs %}
         <table>
@@ -99,5 +60,3 @@
 
 </body>
 </html>
-
-
